@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "@fastify/cors": "^11.2.0",
+    "@fastify/multipart": "^9.4.0",
+    "@google/genai": "^1.44.0",
     "drizzle-orm": "^0.45.1",
     "fastify": "^5.8.1",
     "fastify-type-provider-zod": "^6.1.0",
