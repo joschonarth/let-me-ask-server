@@ -4,7 +4,10 @@ import { schema } from "./schema/index.ts"
 
 await reset(db, schema)
 
-await seed(db, schema).refine((f) => {
+await seed(db, {
+  rooms: schema.rooms,
+  questions: schema.questions,
+}).refine((f) => {
   return {
     rooms: {
       count: 5,
