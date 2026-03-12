@@ -29,6 +29,12 @@ Content-Type: application/json
 
 ###
 
+# Get rooms
+# @name getRoom
+GET {{baseUrl}}/rooms/{{roomId}}
+
+###
+
 # Get room questions
 # @name getRoomQuestions
 GET {{baseUrl}}/rooms/{{roomId}}/questions
