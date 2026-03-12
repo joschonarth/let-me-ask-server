@@ -32,7 +32,7 @@ export async function transcribeAudio(audioAsBase64: string, mimeType: string) {
 
 export async function generateEmbeddings(text: string) {
   const response = await gemini.models.embedContent({
-    model: "text-embedding-004",
+    model: "gemini-embedding-001",
     contents: [{ text }],
     config: {
       taskType: "RETRIEVAL_DOCUMENT",
